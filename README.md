@@ -1,5 +1,4 @@
-# dbr
- Analisys of epitaxial Al(x)Ga(1-x)As
+# Measuring and modelling DBR grown via MOCVD 
 
  ## Distributed Bragg Reflector (DBR)
 
