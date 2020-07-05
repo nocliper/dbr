@@ -3,13 +3,15 @@
 
  ## Distributed Bragg Reflector (DBR)
 
- A **Distributed Bragg Reflector (DBR)** is a structure formed from multiple layers of alternating materials with varying refractive index. Each layer boundary causes a partial reflection of an optical wave. For waves whose vacuum wavelength is close to four times the optical thickness of the layers $\lambda_b$, the many reflections combine with constructive interference, and the layers act as a high-quality reflector. The range of wavelengths that are reflected is called the photonic stop-band. Within this range of wavelengths, light is "forbidden" to propagate in the structure.
+ A **Distributed Bragg Reflector (DBR)** is a structure formed from multiple layers of alternating materials with varying refractive index. Each layer boundary causes a partial reflection of an optical wave. For waves whose vacuum wavelength is close to four times the optical thickness of the layers <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\lambda_b" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\lambda_b" title="\lambda_b" /></a>, the many reflections combine with constructive interference, and the layers act as a high-quality reflector. The range of wavelengths that are reflected is called the photonic stop-band. Within this range of wavelengths, light is "forbidden" to propagate in the structure.
 
  ![Reflection of light in a DBR](img/dbr.png)
 
- The same principle is used to create multilayer antireflection coatings that are used, including for solar cells. In such coatings, the layer thicknesses are chosen so as to minimise the reflection of $\text{R}$ and, accordingly, to maximise the transmission of $\text{T}$ (it should be noted that the law $\text{T} = 1 - \text{R}$ holds for dielectric structures)
+ The same principle is used to create multilayer antireflection coatings that are used, including for solar cells. In such coatings, the layer thicknesses are chosen so as to minimise the reflection of <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{R}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{R}" title="\text{R}" /></a> and, accordingly, to maximise the transmission of <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{T}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{T}" title="\text{T}" /></a> (it should be noted that the law <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{T}&space;=&space;1&space;-&space;\text{R}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{T}&space;=&space;1&space;-&space;\text{R}" title="\text{T} = 1 - \text{R}" /></a> holds for dielectric structures)
 
- $$d_1\cdot n_1 = d_1\cdot n_1 = \frac{\lambda_b}{4}$$
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;d_1\cdot&space;n_1&space;=&space;d_1\cdot&space;n_1&space;=&space;\frac{\lambda_b}{4}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;d_1\cdot&space;n_1&space;=&space;d_1\cdot&space;n_1&space;=&space;\frac{\lambda_b}{4}" title="d_1\cdot n_1 = d_1\cdot n_1 = \frac{\lambda_b}{4}" /></a>
+</p>
 
  Assuming that a plane light wave is incident strictly perpendicular to the surface of the DBR, the layers are homogeneous and isotropic, the faces of the layers are strictly parallel, then for such a model structure of the DBR we can write the reflection coefficient $R$ in the following rather simple form: - for structures where the refractive indices form the sequence $n_0|n_1|n_2|n_1|n_2|...|n_2|n_s$
 
@@ -41,7 +43,7 @@ There are two waves at each point: one propagates to the right $E^R$, the second
 
 $$E = \begin{pmatrix} E^R \\ E^L\end{pmatrix}$$
 
-For any two points, the vectors will be connected by a certain linear expression that takes into account the propagation of light through the medium and through the boundaries of two media. This expression can be written using matrices. Basically, we need two matrices. The first $\textbf{M}_1$ connects the vectors to the left and to the right of the interface. The second $\textbf{M}_2$ describes the propagation of a wave in a homogeneous medium (between interfaces).
+For any two points, the vectors will be connected by a certain linear expression that takes into account the propagation of light through the medium and through the boundaries of two media. This expression can be written using matrices. Basically, we need two matrices. The first $\textbf{M}_1$ connects the vectors to the left and to the right of the interface. The second $\textbf{M}_2$ describes the propagation of a wave in a homogenous medium (between interfaces).
 
 $$\begin{pmatrix} E^R_2 \\ E^L_2\end{pmatrix} = \textbf{M}_1\cdot \begin{pmatrix} E^R_1 \\ E^L_1\end{pmatrix}, \,\,\, \begin{pmatrix} E^R_3 \\ E^L_3\end{pmatrix} = \textbf{M}_2\cdot \begin{pmatrix} E^R_3 \\ E^L_3\end{pmatrix}$$
 
