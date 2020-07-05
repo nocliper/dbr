@@ -1,5 +1,4 @@
-# dbr
- Analisys of epitaxial Al(x)Ga(1-x)As
+# Measuring and modelling DBR grown via MOCVD 
 
  ## Distributed Bragg Reflector (DBR)
 
@@ -13,17 +12,21 @@
 <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;d_1\cdot&space;n_1&space;=&space;d_1\cdot&space;n_1&space;=&space;\frac{\lambda_b}{4}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;d_1\cdot&space;n_1&space;=&space;d_1\cdot&space;n_1&space;=&space;\frac{\lambda_b}{4}" title="d_1\cdot n_1 = d_1\cdot n_1 = \frac{\lambda_b}{4}" /></a>
 </p>
 
- Assuming that a plane light wave is incident strictly perpendicular to the surface of the DBR, the layers are homogeneous and isotropic, the faces of the layers are strictly parallel, then for such a model structure of the DBR we can write the reflection coefficient $R$ in the following rather simple form: - for structures where the refractive indices form the sequence $n_0|n_1|n_2|n_1|n_2|...|n_2|n_s$
+ Assuming that a plane light wave is incident strictly perpendicular to the surface of the DBR, the layers are homogeneous and isotropic, the faces of the layers are strictly parallel, then for such a model structure of the DBR we can write the reflection coefficient <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{R}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{R}" title="\text{R}" /></a> in the following rather simple form: - for structures where the refractive indices form the sequence <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;n_0|n_1|n_2|n_1|n_2|...|n_2|n_s" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;n_0|n_1|n_2|n_1|n_2|...|n_2|n_s" title="n_0|n_1|n_2|n_1|n_2|...|n_2|n_s" /></a>
 
- $$\text{R} = \left(\frac{1-\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}{1+\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}\right)^2$$
+<p align="center">
+<a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{R}&space;=&space;\left(\frac{1-\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}{1&plus;\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}\right)^2" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{R}&space;=&space;\left(\frac{1-\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}{1&plus;\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}\right)^2" title="\text{R} = \left(\frac{1-\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}{1+\frac{n_s}{n_0}\left(\frac{n_1}{n_2}\right)^{2N}}\right)^2" /></a>
+ </p>
 
- where $N$ - is number of $n_1+n_2$ layers
+ where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;N" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;N" title="N" /></a> - is number of <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;n_1&plus;n_2" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;n_1&plus;n_2" title="n_1+n_2" /></a> layers
 
- Thus, the larger the ratio of refractive indices $n_1/n_2$ and $N$, the higher the reflection coefficient of the DBR. With an increase in the number of layers, the region of high reflection narrows, the peak $R$ becomes flatter and acquires the form of a plateau, and the magnitude of reflection increases. Plateau width $\Delta\lambda$ i.e. stop-band depends on the difference in the refractive indices of the layers in accordance with the expression:
+Thus, the larger the ratio of refractive indices <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;n_1/n_2" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;n_1/n_2" title="n_1/n_2" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;N" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;N" title="N" /></a>, the higher the reflection coefficient of the DBR. With an increase in the number of layers, the region of high reflection narrows, the peak <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{R}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{R}" title="\text{R}" /></a> becomes flatter and acquires the form of a plateau, and the magnitude of reflection increases. Plateau width <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\Delta\lambda" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\Delta\lambda" title="\Delta\lambda" /></a> i.e. stop-band depends on the difference in the refractive indices of the layers in accordance with the expression:
 
- $$\Delta\lambda = \frac{2\lambda_b\cdot\Delta n}{\pi\cdot n_{eff}}$$
+<p align="center">
+ <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\Delta\lambda&space;=&space;\frac{2\lambda_b\cdot\Delta&space;n}{\pi\cdot&space;n_{eff}}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\Delta\lambda&space;=&space;\frac{2\lambda_b\cdot\Delta&space;n}{\pi\cdot&space;n_{eff}}" title="\Delta\lambda = \frac{2\lambda_b\cdot\Delta n}{\pi\cdot n_{eff}}" /></a>
+ </p>
 
- where $\Delta n = n_1 - n_2$; $n_{eff} = 2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)^{-1}$
+ where <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\Delta&space;n&space;=&space;n_1&space;-&space;n_2" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\Delta&space;n&space;=&space;n_1&space;-&space;n_2" title="\Delta n = n_1 - n_2" /></a>; <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;n_{eff}&space;=&space;2\left(\frac{1}{n_1}&plus;\frac{1}{n_2}\right)^{-1}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;n_{eff}&space;=&space;2\left(\frac{1}{n_1}&plus;\frac{1}{n_2}\right)^{-1}" title="n_{eff} = 2\left(\frac{1}{n_1}+\frac{1}{n_2}\right)^{-1}" /></a>
 
  ## Epitaxial layers thickness calculation
 
@@ -31,7 +34,7 @@ Due to the centrally symmetric design of the reactor growth chamber, it is possi
 
 ![](img/epitaxy_chamber.png)
 
-Method based on mapping whole substrate. A reflectivity spectrum is taken at each point on substrate surface. Data obtained on line between ${300}^\circ$ and ${120}^\circ$ of $\text{Al}_{0.6}\text{Ga}_{0.4}\text{As}\text{ / } \text{AlAs}$ layers on two $\text{Ge}$ substrates:
+Method based on mapping whole substrate. A reflectivity spectrum is taken at each point on substrate surface. Data obtained on line between <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;{300}^\circ" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;{300}^\circ" title="{300}^\circ" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;{120}^\circ" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;{120}^\circ" title="{120}^\circ" /></a> of <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{Al}_{0.6}\text{Ga}_{0.4}\text{As}\text{&space;/&space;}&space;\text{AlAs}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{Al}_{0.6}\text{Ga}_{0.4}\text{As}\text{&space;/&space;}&space;\text{AlAs}" title="\text{Al}_{0.6}\text{Ga}_{0.4}\text{As}\text{ / } \text{AlAs}" /></a> layers on two <a href="https://www.codecogs.com/eqnedit.php?latex=\inline&space;\text{Ge}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\inline&space;\text{Ge}" title="\text{Ge}" /></a> substrates:
 
 ![](M1/M1_1.bmp)
 
