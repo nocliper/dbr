@@ -1,10 +1,10 @@
 def mat_pow(M, N):
     """Returns matrix M in N-th power using
-    Chebyshev polinoms of second kind
+    Chebyshev polinomials of second kind
     M – Unimodular matrix
-    N – power
+    N – power 
 
-    return = M**N
+    return = M^N
     """
     import numpy as np
     from scipy.special import eval_chebyu
