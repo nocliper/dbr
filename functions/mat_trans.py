@@ -2,8 +2,11 @@
 def mat_trans(l_1, n_1, l_2, n_2, l_s, n_s, wl, N, n_0):
     """Returns transfer matrices of DBR with
     l_1 – First layer thickness
+    n_1 – First layer refractive index func on wl
     l_2 – Second layer thickness
+    n_2 – Second layer refractive index func on wl
     l_s – Substrate thickness
+    n_s – Substrate layer refractive index func on wl
     wl  – Wavelenght
     N   – Number of superlattice layers
     """
@@ -17,7 +20,7 @@ def mat_trans(l_1, n_1, l_2, n_2, l_s, n_s, wl, N, n_0):
 
         ....|  (n_1)  |  (n_2)  |
         ....|         |         |
-        ....|       ~>|~~~~~~~~>|
+        ....|       ~>X~~~~~~~~>|
         ....|         |         |
         ....|         |<--l_2-->|
 
